@@ -1,7 +1,8 @@
-package com.jermmy.studymybatis.service;
+package com.jerrmy.studymybatis.service;
 
-import com.jerrmy.bookkeeping.entity.User;
-import com.jerrmy.bookkeeping.mapper.UserMapper;
+
+import com.jerrmy.studymybatis.entity.User;
+import com.jerrmy.studymybatis.mapper.UserMapper;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

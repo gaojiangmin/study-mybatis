@@ -1,4 +1,4 @@
-package com.jermmy.studymybatis;
+package com.jerrmy.studymybatis;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

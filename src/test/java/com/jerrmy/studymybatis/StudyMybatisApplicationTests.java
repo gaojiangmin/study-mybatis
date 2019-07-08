@@ -1,4 +1,4 @@
-package com.jermmy.studymybatis;
+package com.jerrmy.studymybatis;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

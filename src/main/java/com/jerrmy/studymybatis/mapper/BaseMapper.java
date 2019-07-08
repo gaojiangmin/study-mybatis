@@ -1,4 +1,4 @@
-package com.jermmy.studymybatis.mapper;
+package com.jerrmy.studymybatis.mapper;
 
 /**
  * DateTime : 2019/6/28  11:33

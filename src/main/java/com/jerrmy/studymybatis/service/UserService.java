@@ -1,55 +1,49 @@
-package com.jermmy.studymybatis.mapper;
+package com.jerrmy.studymybatis.service;
 
-import com.jerrmy.bookkeeping.entity.User;
 
-import org.apache.ibatis.annotations.Mapper;
-import org.springframework.stereotype.Component;
+import com.jerrmy.studymybatis.entity.User;
 
 import java.util.List;
 
 /**
- * DateTime : 2019/6/26  10:07
+ * DateTime : 2019/6/25  17:13
  * Author: Jermmy.
  */
-@Component
-@Mapper
-public interface UserMapper extends BaseMapper{
-
+public interface UserService {
 
     /**
      * 获取所有用户
+     *
      * @return
      */
     List<User> getAllUsers();
 
     /**
-     * 根据Id查询用户
-     * @param id
+     * 根据ID查询用户
+     *
      * @return
      */
     List<User> getUserById(String id);
 
-
     /**
      * 根据姓名查询用户
-     * @param name
+     *
      * @return
      */
     List<User> getUserByName(String name);
 
     /**
      * 根据手机号查询用户
-     * @param phone
+     *
      * @return
      */
     List<User> getUserByPhone(String phone);
 
     /**
-     * 添加用户
+     * 创建用户
      * @param user
-     * @return
      */
-    int addUser(User user);
+    int create(User user);
 
     /**
      * 删除用户
@@ -58,8 +52,9 @@ public interface UserMapper extends BaseMapper{
     void deleteUser(Long id);
 
     /**
-     * 修改用户
+     * 更新用户
      * @param user
      */
     void updateUser(User user);
+
 }

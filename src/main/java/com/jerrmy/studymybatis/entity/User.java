@@ -1,4 +1,4 @@
-package com.jermmy.studymybatis.entity;
+package com.jerrmy.studymybatis.entity;
 
 import java.io.Serializable;
 

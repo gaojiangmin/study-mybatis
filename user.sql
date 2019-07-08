@@ -13,3 +13,5 @@ INSERT INTO tb_user(t_user_name,t_user_password,t_user_phone,t_user_sex,t_user_a
 ('张三','Abcd1234','13725567048','男','25'),
 ('李四','Abcd1234','13725567049','女','26'),
 ('王五','Abcd1234','13725567040','男','27');
+
+

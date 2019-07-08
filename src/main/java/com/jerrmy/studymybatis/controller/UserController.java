@@ -1,7 +1,9 @@
-package com.jermmy.studymybatis.controller;
+package com.jerrmy.studymybatis.controller;
 
-import com.jerrmy.bookkeeping.entity.User;
-import com.jerrmy.bookkeeping.service.UserServiceImpl;
+
+
+import com.jerrmy.studymybatis.entity.User;
+import com.jerrmy.studymybatis.service.UserServiceImpl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
