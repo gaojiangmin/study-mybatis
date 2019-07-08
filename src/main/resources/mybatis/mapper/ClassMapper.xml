@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?><!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jerrmy.studymybatis.mapper.ClassMapper">
+    <resultMap id="BaseResultMap" type="_Class">
+        <id column="c_id" property="id" jdbcType="INTEGER" />
+        <result column="c_name" property="name" jdbcType="VARCHAR" />
+        <association property="teacher" column="teacher_id" javaType="_Teacher">
+            <id property="id" column="t_id"/>
+            <result property="name" column="t_name"/>
+        </association>
+        <collection property="students" ofType="_Student">
+            <id property="id" column="s_id"/>
+            <result property="name" column="s_name"/>
+        </collection>
+    </resultMap>
+
+
+    <select id="getClassById" parameterType="String" resultMap="BaseResultMap">
+        SELECT *
+        FROM class c,teacher t,student s
+        WHERE c.teacher_id = t.t_id AND c.c_id=s.class_id AND c.c_id=#{id}
+    </select>
+
+
+</mapper>
