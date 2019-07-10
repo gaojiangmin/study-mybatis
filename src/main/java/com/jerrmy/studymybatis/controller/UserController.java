@@ -1,7 +1,6 @@
 package com.jerrmy.studymybatis.controller;
 
 
-
 import com.jerrmy.studymybatis.entity.User;
 import com.jerrmy.studymybatis.service.UserServiceImpl;
 
@@ -16,7 +15,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * DateTime : 2019/6/25  17:11
@@ -107,6 +108,16 @@ public class UserController {
         user.setSex(sex);
         user.setAge(age);
         userService.updateUser(user);
+    }
+
+    @GetMapping("/getUserCount")
+    public int updateUser(@RequestParam int flag) {
+        Map<String, Integer> map = new HashMap<>();
+        map.put("sexid", flag);
+        map.put("usercount", 0);
+
+        userService.getUserCount(map);
+        return map.get("usercount");
     }
 
 }

@@ -7,6 +7,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * DateTime : 2019/6/26  10:07
@@ -63,4 +64,6 @@ public interface UserMapper extends BaseMapper{
      * @param user
      */
     void updateUser(User user);
+
+    void getUserCount(Map map);
 }

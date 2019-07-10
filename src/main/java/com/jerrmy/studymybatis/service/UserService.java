@@ -4,6 +4,7 @@ package com.jerrmy.studymybatis.service;
 import com.jerrmy.studymybatis.entity.User;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * DateTime : 2019/6/25  17:13
@@ -56,5 +57,7 @@ public interface UserService {
      * @param user
      */
     void updateUser(User user);
+
+    void  getUserCount(Map map);
 
 }
